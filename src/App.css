@@ -1,3 +1,8 @@
+.x{
+  display: inline-block;
+  color: pink;
+}
+
 .App {
   text-align: center;
 }
@@ -39,6 +44,3 @@
   }
 }
 
-.side-by-side {
-  display: inline-block;
-}

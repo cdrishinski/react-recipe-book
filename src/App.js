@@ -20,9 +20,6 @@ const data = {
   ]
 }
 
-const style = {
-  color: 'red'
-}
 
 function App() {
   return (
@@ -31,8 +28,8 @@ function App() {
         <FontAwesomeIcon className="App-logo fa-6x" icon={faCookieBite} />
         <Title title={data.name} />
         <div>
-          <Ingredients list={data.ingredients} className="side-by-side" />
-          <Steps list={data.steps} className="side-by-side" />
+          <Ingredients list={data.ingredients} className="x" />
+          <Steps list={data.steps} className="x" />
         </div>
       </header>
     </div>
