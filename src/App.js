@@ -27,9 +27,13 @@ function App() {
       <header className="App-header">
         <FontAwesomeIcon className="App-logo fa-6x" icon={faCookieBite} />
         <Title title={data.name} />
-        <div>
-          <Ingredients list={data.ingredients} className="x" />
-          <Steps list={data.steps} className="x" />
+        <div className="x">
+          <div className="side">
+            <Ingredients list={data.ingredients} />
+          </div>
+          <div className="side">
+            <Steps list={data.steps} />
+          </div>
         </div>
       </header>
     </div>
