@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 
 
 class Title extends Component {
-  render () {
+  render() {
     return (
-        <div>
-            <h2>{this.props.title}</h2>
-        </div>
+      <div>
+        <h2>{this.props.title}</h2>
+      </div>
     )
   }
 }

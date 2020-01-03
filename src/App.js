@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Title from './components/Title'
 import Steps from './components/Steps'
 import Ingredients from './components/Ingredients'
 // get our fontawesome imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCookieBite, faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
+import { faCookieBite } from '@fortawesome/free-solid-svg-icons'
 
 const data = {
   'name': 'Baked Salmon',
@@ -21,15 +20,20 @@ const data = {
   ]
 }
 
+const style = {
+  color: 'red'
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FontAwesomeIcon className="App-logo fa-10x" icon={faCookieBite}/>
+        <FontAwesomeIcon className="App-logo fa-6x" icon={faCookieBite} />
         <Title title={data.name} />
-        <Ingredients list={data.ingredients} />
-        <Steps list={data.steps} />
+        <div>
+          <Ingredients list={data.ingredients} className="side-by-side" />
+          <Steps list={data.steps} className="side-by-side" />
+        </div>
       </header>
     </div>
   );
